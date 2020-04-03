@@ -17,8 +17,8 @@ var mode = 'block'; // [block, export, import];
 
 var storage = new ExtensionStorage();
 const mobileTwitterCSRFCookieKey = 'ct0';
-const rateLimitWait = 100;
-const otherWait = 10;
+const rateLimitWait = 20000;
+const otherWait = 20000;
 if (typeof XPCNativeWrapper === 'function') {
     // In Firefox, XHR($.ajax) doesn't send Referer header.
     // see: https://discourse.mozilla.org/t/webextension-xmlhttprequest-issues-no-cookies-or-referrer-solved/11224/9
